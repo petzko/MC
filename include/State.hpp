@@ -60,7 +60,8 @@ namespace MC{
 			/** destructor **/
 			~Particle();
 			/** scatter function **/ 
-			bool scatter(AbstractState* out_state, double (*scatterer)(AbstractState* instate, AbstractState* outstate));
+			bool scatter(AbstractState* out_state,int& inout_x,int& intout_y, double (*scatterer)(AbstractState* instate, AbstractState* outstate,int&,int&));
+	
 	};
 
 };

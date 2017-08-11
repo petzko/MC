@@ -40,20 +40,6 @@ stdlib.h
 random
 -
 
-/home/kenny/Documents/workspaces/C++/MC/src/State.cpp
-State.hpp
-/home/kenny/Documents/workspaces/C++/MC/src/State.hpp
-iostream
--
-random
--
-
-/home/kenny/Documents/workspaces/C++/MC/src/main.cpp
-Loop.hpp
-/home/kenny/Documents/workspaces/C++/MC/src/Loop.hpp
-iostream
--
-
 /home/kenny/Documents/workspaces/C++/MC/src/utils.cpp
 utils.hpp
 /home/kenny/Documents/workspaces/C++/MC/src/utils.hpp

@@ -17,7 +17,7 @@
 
 namespace MC{
 
-	double scatter_checkerstates(AbstractState* init, AbstractState* fin);
+	double scatter_checkerstates(AbstractState* init, AbstractState* fin,int& Nx, int& Ny);
 
 	void print_board(int Nx, int Ny, AbstractState** states);
 

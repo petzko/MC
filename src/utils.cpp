@@ -45,20 +45,21 @@ void MC::print_board(int Nx, int Ny, MC::AbstractState** states){
 
 
 
-double MC::scatter_checkerstates(MC::AbstractState* instate_a, MC::AbstractState* finstate_a){	
+double MC::scatter_checkerstates(MC::AbstractState* instate_a,
+	       	MC::AbstractState* finstate_a, int& inout_x, int& inout_y){	
 
 
 	MC::CheckersState* instate = (MC::CheckersState*) instate_a; 
 	MC::CheckersState* finstate = (MC::CheckersState*) finstate_a;
 	//std::cout << "init scatter state: (" << instate->x << ";"<<instate->y <<")\n";
 	//std::cout << "fin scatter state: (" << finstate->x << ";"<<finstate->y <<")\n";
-	
+	double res= 2.;	
 	// do not change anything ! 
-	if (instate == finstate) { return 0.0;} 
+	if (instate == finstate) { res = 0.;} 
 
 
 	// can only go on un_occupied state! 
-	if (finstate->is_occupied()){ return 0.0;}
+	if (finstate->is_occupied()){ res = 0.;}
 
 	int ix = instate->x; 
 	int iy = instate->y; 
@@ -79,28 +80,38 @@ double MC::scatter_checkerstates(MC::AbstractState* instate_a, MC::AbstractState
 		// |1/9 |1/9 |1/9 |
 		// |____|____|____|
 		//
-		if (ABS(dx) <= 1 && ABS(dy) <= 1){
-			return 1./9.;
-		} 
+		if (ABS(dx) <= 1 && ABS(dy) <= 1){ res =  1./9.; } 
 	}else{	
 		// does not allow diagonal transitions 
 		// capture any kind of bias in the scattering mechanisms?
 		// _______________
 		// |0   |1/10| 0  |
 		// |____|____|____|
-		// |5/10|1/10|1/10|
+		// |6/10|1/10|1/10|
 		// |____|____|____|
 		// |0   |1/10| 0  |
 		// |____|____|____|
 		
-
-		if ((dy == -1) && dx==0) return 5/10;
+		/**
+		 * trend
+		 */
+		double bias = 6./10.; 
+		double rest = (1. - bias)/4.; 
+		if ((dy == 1) && dx==0) res = bias;
 		
-		if(  (ABS(dx) ==1 && ABS(dy)==0) || 
+		/*
+		 * 
+		 * */
+		if((ABS(dx) ==1 && ABS(dy)==0) || 
 				(ABS(dx)==0 && ABS(dy) == 1) ){
-		       	return 1./10.; }
+		       	res =  rest; }
 
+		/*
+		 *periodic boundary in y-direction;  
+		 * */
+		if( (dy == -(inout_y-1)) && dx == 0) res =  bias;
 	}
 	//std::cout<<"out of reach\n";
-	return 0.0;
+	inout_x = dx; inout_y=dy; 
+	return res;
 }

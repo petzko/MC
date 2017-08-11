@@ -65,11 +65,8 @@ void main_loop(int Nx, int Ny, int num_particles){
 			std::uniform_real_distribution<double> dist(0., num_states*1.0);
 		
 			int state_idx = int(floor(dist(mt)));
-			// place holder for x info and y info --> dirty cheat actually
-			int ph_x = Nx; 
-			int ph_y = Ny; 		
+			
 			bool scattered = particles[p]->scatter(states_list[state_idx],Nx,Ny,&scatter_checkerstates);	
-
 			if(scattered){
 			       	std::cout<<"scatter event occured at t=" <<t <<"\n";  
 				MC::print_board(Nx,Ny,states_list);

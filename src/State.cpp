@@ -48,10 +48,10 @@ MC::Particle::Particle(MC::AbstractState* init_state, int particle_id){
 
 MC::Particle::~Particle(){;}
 
-bool MC::Particle::scatter(MC::AbstractState* fin_state, double (*scatterer)(MC::AbstractState*,MC::AbstractState*)){		
+bool MC::Particle::scatter(MC::AbstractState* fin_state, int& inout_x, int& inout_y, double (*scatterer)(MC::AbstractState*,MC::AbstractState*,int&, int&)){	
 
 	//scattering probability 
-	double s_prob = (*scatterer)(this->state,fin_state);
+	double s_prob = (*scatterer)(this->state,fin_state,inout_x,inout_y);
 
 	std::random_device rd;
 	std::mt19937 mt(rd());

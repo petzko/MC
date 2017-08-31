@@ -1,4 +1,7 @@
 *.o
+.*.swp
+.*.swo
+
 1
 test*
 scratchboard/*

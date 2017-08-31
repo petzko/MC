@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MC01.dir/src/main.cpp.o"
-  "CMakeFiles/MC01.dir/src/utils.cpp.o"
   "CMakeFiles/MC01.dir/src/Loop.cpp.o"
   "CMakeFiles/MC01.dir/src/State.cpp.o"
+  "CMakeFiles/MC01.dir/src/CheckersState.cpp.o"
   "MC01.pdb"
   "MC01"
 )

@@ -72,32 +72,9 @@ CMakeFiles/MC01.dir/src/main.cpp.o.provides: CMakeFiles/MC01.dir/src/main.cpp.o.
 
 CMakeFiles/MC01.dir/src/main.cpp.o.provides.build: CMakeFiles/MC01.dir/src/main.cpp.o
 
-CMakeFiles/MC01.dir/src/utils.cpp.o: CMakeFiles/MC01.dir/flags.make
-CMakeFiles/MC01.dir/src/utils.cpp.o: ../src/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kenny/Documents/workspaces/C++/MC/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MC01.dir/src/utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MC01.dir/src/utils.cpp.o -c /home/kenny/Documents/workspaces/C++/MC/src/utils.cpp
-
-CMakeFiles/MC01.dir/src/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MC01.dir/src/utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kenny/Documents/workspaces/C++/MC/src/utils.cpp > CMakeFiles/MC01.dir/src/utils.cpp.i
-
-CMakeFiles/MC01.dir/src/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MC01.dir/src/utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kenny/Documents/workspaces/C++/MC/src/utils.cpp -o CMakeFiles/MC01.dir/src/utils.cpp.s
-
-CMakeFiles/MC01.dir/src/utils.cpp.o.requires:
-.PHONY : CMakeFiles/MC01.dir/src/utils.cpp.o.requires
-
-CMakeFiles/MC01.dir/src/utils.cpp.o.provides: CMakeFiles/MC01.dir/src/utils.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/utils.cpp.o.provides.build
-.PHONY : CMakeFiles/MC01.dir/src/utils.cpp.o.provides
-
-CMakeFiles/MC01.dir/src/utils.cpp.o.provides.build: CMakeFiles/MC01.dir/src/utils.cpp.o
-
 CMakeFiles/MC01.dir/src/Loop.cpp.o: CMakeFiles/MC01.dir/flags.make
 CMakeFiles/MC01.dir/src/Loop.cpp.o: ../src/Loop.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kenny/Documents/workspaces/C++/MC/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kenny/Documents/workspaces/C++/MC/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MC01.dir/src/Loop.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MC01.dir/src/Loop.cpp.o -c /home/kenny/Documents/workspaces/C++/MC/src/Loop.cpp
 
@@ -120,7 +97,7 @@ CMakeFiles/MC01.dir/src/Loop.cpp.o.provides.build: CMakeFiles/MC01.dir/src/Loop.
 
 CMakeFiles/MC01.dir/src/State.cpp.o: CMakeFiles/MC01.dir/flags.make
 CMakeFiles/MC01.dir/src/State.cpp.o: ../src/State.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kenny/Documents/workspaces/C++/MC/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kenny/Documents/workspaces/C++/MC/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MC01.dir/src/State.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MC01.dir/src/State.cpp.o -c /home/kenny/Documents/workspaces/C++/MC/src/State.cpp
 
@@ -141,20 +118,43 @@ CMakeFiles/MC01.dir/src/State.cpp.o.provides: CMakeFiles/MC01.dir/src/State.cpp.
 
 CMakeFiles/MC01.dir/src/State.cpp.o.provides.build: CMakeFiles/MC01.dir/src/State.cpp.o
 
+CMakeFiles/MC01.dir/src/CheckersState.cpp.o: CMakeFiles/MC01.dir/flags.make
+CMakeFiles/MC01.dir/src/CheckersState.cpp.o: ../src/CheckersState.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kenny/Documents/workspaces/C++/MC/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MC01.dir/src/CheckersState.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MC01.dir/src/CheckersState.cpp.o -c /home/kenny/Documents/workspaces/C++/MC/src/CheckersState.cpp
+
+CMakeFiles/MC01.dir/src/CheckersState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MC01.dir/src/CheckersState.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kenny/Documents/workspaces/C++/MC/src/CheckersState.cpp > CMakeFiles/MC01.dir/src/CheckersState.cpp.i
+
+CMakeFiles/MC01.dir/src/CheckersState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MC01.dir/src/CheckersState.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kenny/Documents/workspaces/C++/MC/src/CheckersState.cpp -o CMakeFiles/MC01.dir/src/CheckersState.cpp.s
+
+CMakeFiles/MC01.dir/src/CheckersState.cpp.o.requires:
+.PHONY : CMakeFiles/MC01.dir/src/CheckersState.cpp.o.requires
+
+CMakeFiles/MC01.dir/src/CheckersState.cpp.o.provides: CMakeFiles/MC01.dir/src/CheckersState.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/CheckersState.cpp.o.provides.build
+.PHONY : CMakeFiles/MC01.dir/src/CheckersState.cpp.o.provides
+
+CMakeFiles/MC01.dir/src/CheckersState.cpp.o.provides.build: CMakeFiles/MC01.dir/src/CheckersState.cpp.o
+
 # Object files for target MC01
 MC01_OBJECTS = \
 "CMakeFiles/MC01.dir/src/main.cpp.o" \
-"CMakeFiles/MC01.dir/src/utils.cpp.o" \
 "CMakeFiles/MC01.dir/src/Loop.cpp.o" \
-"CMakeFiles/MC01.dir/src/State.cpp.o"
+"CMakeFiles/MC01.dir/src/State.cpp.o" \
+"CMakeFiles/MC01.dir/src/CheckersState.cpp.o"
 
 # External object files for target MC01
 MC01_EXTERNAL_OBJECTS =
 
 MC01: CMakeFiles/MC01.dir/src/main.cpp.o
-MC01: CMakeFiles/MC01.dir/src/utils.cpp.o
 MC01: CMakeFiles/MC01.dir/src/Loop.cpp.o
 MC01: CMakeFiles/MC01.dir/src/State.cpp.o
+MC01: CMakeFiles/MC01.dir/src/CheckersState.cpp.o
 MC01: CMakeFiles/MC01.dir/build.make
 MC01: CMakeFiles/MC01.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable MC01"
@@ -165,9 +165,9 @@ CMakeFiles/MC01.dir/build: MC01
 .PHONY : CMakeFiles/MC01.dir/build
 
 CMakeFiles/MC01.dir/requires: CMakeFiles/MC01.dir/src/main.cpp.o.requires
-CMakeFiles/MC01.dir/requires: CMakeFiles/MC01.dir/src/utils.cpp.o.requires
 CMakeFiles/MC01.dir/requires: CMakeFiles/MC01.dir/src/Loop.cpp.o.requires
 CMakeFiles/MC01.dir/requires: CMakeFiles/MC01.dir/src/State.cpp.o.requires
+CMakeFiles/MC01.dir/requires: CMakeFiles/MC01.dir/src/CheckersState.cpp.o.requires
 .PHONY : CMakeFiles/MC01.dir/requires
 
 CMakeFiles/MC01.dir/clean:

@@ -1,1 +1,1 @@
-/usr/bin/c++   --std=c++11    CMakeFiles/MC01.dir/src/main.cpp.o CMakeFiles/MC01.dir/src/utils.cpp.o CMakeFiles/MC01.dir/src/Loop.cpp.o CMakeFiles/MC01.dir/src/State.cpp.o  -o MC01 -rdynamic 
+/usr/bin/c++   --std=c++11    CMakeFiles/MC01.dir/src/main.cpp.o CMakeFiles/MC01.dir/src/Loop.cpp.o CMakeFiles/MC01.dir/src/State.cpp.o CMakeFiles/MC01.dir/src/CheckersState.cpp.o  -o MC01 -rdynamic 

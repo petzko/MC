@@ -115,6 +115,30 @@ MC01/fast:
 	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/build
 .PHONY : MC01/fast
 
+src/CheckersState.o: src/CheckersState.cpp.o
+.PHONY : src/CheckersState.o
+
+# target to build an object file
+src/CheckersState.cpp.o:
+	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/CheckersState.cpp.o
+.PHONY : src/CheckersState.cpp.o
+
+src/CheckersState.i: src/CheckersState.cpp.i
+.PHONY : src/CheckersState.i
+
+# target to preprocess a source file
+src/CheckersState.cpp.i:
+	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/CheckersState.cpp.i
+.PHONY : src/CheckersState.cpp.i
+
+src/CheckersState.s: src/CheckersState.cpp.s
+.PHONY : src/CheckersState.s
+
+# target to generate assembly for a file
+src/CheckersState.cpp.s:
+	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/CheckersState.cpp.s
+.PHONY : src/CheckersState.cpp.s
+
 src/Loop.o: src/Loop.cpp.o
 .PHONY : src/Loop.o
 
@@ -187,30 +211,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/utils.o: src/utils.cpp.o
-.PHONY : src/utils.o
-
-# target to build an object file
-src/utils.cpp.o:
-	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/utils.cpp.o
-.PHONY : src/utils.cpp.o
-
-src/utils.i: src/utils.cpp.i
-.PHONY : src/utils.i
-
-# target to preprocess a source file
-src/utils.cpp.i:
-	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/utils.cpp.i
-.PHONY : src/utils.cpp.i
-
-src/utils.s: src/utils.cpp.s
-.PHONY : src/utils.s
-
-# target to generate assembly for a file
-src/utils.cpp.s:
-	$(MAKE) -f CMakeFiles/MC01.dir/build.make CMakeFiles/MC01.dir/src/utils.cpp.s
-.PHONY : src/utils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +220,9 @@ help:
 	@echo "... MC01"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... src/CheckersState.o"
+	@echo "... src/CheckersState.i"
+	@echo "... src/CheckersState.s"
 	@echo "... src/Loop.o"
 	@echo "... src/Loop.i"
 	@echo "... src/Loop.s"
@@ -229,9 +232,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
 .PHONY : help
 
 
